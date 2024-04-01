@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords"
+        content="Educational Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+    <style>
+        .card-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f3f3f3; /* Change this to your desired background color */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-content {
+            border: none; /* Remove default border from modal content */
+        }
+
+        .modal-header h4 {
+            margin-top: 0; /* Remove top margin from header */
+        }
+
+        /* Style for form fields */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        /* Style for radio buttons */
+        .radio-inline {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="modal-content news-w3l">
+            <div class="modal-header">
+                <button type="button" class="close w3l" data-dismiss="modal">&times;</button>
+                <h4>Register Now</h4>
+                <div class="login-main wthree">
+                    <form action="http://localhost:8080/OC/register" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="SNAME" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="SEMAIL" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender:</label>
+                            <div class="radio">
+                                <label class="radio-inline">
+                                    <input type="radio" name="SGEN" value="male" required> Male
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="SGEN" value="female" required> Female
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="SGEN" value="other" required> Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number (+91):</label>
+                            <input type="text" class="form-control" id="phoneNumber" name="SPHONE" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" class="form-control" id="address" name="SADD" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" name="SPASS" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

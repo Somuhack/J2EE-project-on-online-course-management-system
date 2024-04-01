@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/ad-form.css">
+    </head>
+    <body>
+        <img class="back-image" src="images/back.jpg">
+        <form method="post" action="admissionform.jsp" onsubmit="return Validation()">
+            <div class="box">
+
+                <div class="Head">
+                    <center><h1><b>Admission Form Fillup</b></h1></center>
+                </div>
+
+                <div class="course-details">
+                    <h2 class="heading">Course Details</h2>
+                    <div class="content cname">
+                        <a class="head"><b>Course Name</b></a>
+                        <select id="cname" name="tbCourseName">
+                            <option>---Select---</option>
+                            <option>C++</option>
+                            <option>JAVA</option>
+                            <option>PYTHON</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                        </select>
+                    </div>
+                    <div class="content cid">
+                        <a class="head"><b>Course Id</b></a>
+                        <input type="text" id="cids" name="tbCourseId" disabled>
+                    </div>
+                    <div class="content cfees">
+                        <a class="head"><b>Course Fees</b></a>
+                        <input type="text" id="cfees" name="tbCourseFees" disabled>
+                    </div>
+                    <div class="content cdur">
+                        <a class="head"><b>Course Duration</b></a>
+                        <input type="text" id="cdur" name="tbCourseDur" disabled>
+                    </div>
+                </div>
+
+                <div class="personal-details">
+                    <h2 class="heading">Personal Details</h2>
+                    <div class="content name">
+                        <p class="x"><b>Name of Applicant</b></p>
+                        <input type ="text" id="pname" name="tbName">
+                        <span id="errname" class="err"></span>
+                    </div>
+                    <div class="dob">
+                        <p class="x"><b>Date of Birth</b></p>
+                        <input type ="date"  id="pdob" name="tbDob">
+                    </div>
+                    <div class="fname">
+                        <p class="fathername"><b>Father name </b></p>
+                        <input type ="text"  id="pfname" name="tbFatherName">
+                        <span id="errfname" class="err"></span>
+                    </div>
+                    <div class="gen">
+                        <p class="x"><b>Gender</b></p>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="unknown"> Others
+                    </div>
+                    <div class="number">
+                        <p class="x"><b>Mobile Number </b></p>
+                        <input type="text" id="pmob" name="tbMobile">
+                        <span id="errmob" class="err"></span>
+                    </div>
+                    <div class="address">
+                        <p class="x"><b>Address </b></p>
+                        <input type="text" id="padd" name="tbAddress">
+                    </div>
+                    <div class="district">
+                        <p class="x"><b>District</b></p>
+                        <input type="text" id="pdis" name="tbDistrict">
+                    </div>
+                    <div class="state">
+                        <p class="x"><b>State</b></p>
+                        <select id="pstate" name="state">
+                            <option value="select">----Select----</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CT">Chhattisgarh</option>
+                            <option value="GA">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="GA">Goa</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TG">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UT">Uttarakhand</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DL">Delhi</option>
+                        </select>
+                    </div>
+
+                    <div class="edu-qua">
+                        <h2 class="heading">Educational Qualification</h2>
+                        <div class="equa">
+                            <p class="x"><b>Qualification</b></p>
+                            <select id="equa" name="tbQualification">
+                                <option>---Select---</option>
+                                <option>Secondary</option>
+                                <option>Higher Secondary</option>
+                                <option>Graduation</option>
+                                <option>Post Graduation</option>
+                            </select>
+                        </div>
+                        <div class="epass">
+                            <p class="x"><b>Passing Year</b></p>
+                            <input type="number" id="epass" name="tbPassingyear">
+                        </div>
+                        <div class="emarks">
+                            <p class="x"><b>Total Marks Obtained</b></p>
+                            <input type="number" id="emarks" name="tbMarks">
+                        </div>
+                        <div class="eper">
+                            <p class="x"><b>Total Percentage(%)</b></p>
+                            <input type="number" id="eper" name="tbPercentage">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="submit">
+                    <input type="submit" class="sub" value="Submit">
+                </div>
+
+
+            </div> 
+        </form>
+    </body>
+</html>

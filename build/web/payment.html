@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Form</h2>
+        <form id="paymentForm" action="http://localhost:8080/OC/payment" method="post" >
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" maxlength="16" placeholder="Enter 16-digit card number" required>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="expiryDate" name="expiryDate" maxlength="3" placeholder="MM/YYYY" required>
+            <label for="email">Registered Email:</label>
+            <input type="email" id="expiryDate" name="eamil"  placeholder="Enter Email" required>
+            <label for="RS">Amount :</label>
+            <input type="text" id="RS" name="Rs" maxlength="3" placeholder="Enter Amount" required>
+            <button type="submit">Submit Payment</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script src="js/payment.js"></script>
+</body>
+</html>
